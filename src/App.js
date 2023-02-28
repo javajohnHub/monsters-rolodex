@@ -22,6 +22,8 @@ class App extends Component {
           return { monsters: users, filteredMonsters: users, searchString: "" };
         })
       );
+
+      
   }
 
   onChangeHandler = (event) => {
@@ -40,8 +42,7 @@ class App extends Component {
     );
 
     return (
-      <div className="App">
-        <h1>Monsters Rolodex</h1>
+      <div>
         <SearchBox onChangeHandler={onChangeHandler} className="monsters-search-box" placeHolder="Search Monsters"/>
         <CardList monsters={filteredMonsters} />
       </div>
