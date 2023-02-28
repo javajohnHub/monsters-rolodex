@@ -7,6 +7,7 @@ export class SearchBox extends Component {
 
     return (
       <div>
+        <h1 className="app-title">Monsters Rolodex</h1>
         <input
           className={`search-box ${className}`}
           placeholder={placeHolder}
